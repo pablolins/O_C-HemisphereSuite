@@ -51,8 +51,6 @@ public:
 
     void View() {
         gfxHeader("Scope");
-        //gfxPrint(1, 2, "Scope");
-        //DrawTicks();
         DrawVoltage();
         DrawBPM();
         DrawInput1();
@@ -121,10 +119,6 @@ private:
         gfxPrint(110, 1, bpm / 4);
         gfxBitmap(102, 1, 8, CLOCK_ICON);
     }
-
-//    void DrawTicks() {
-//        gfxPrint(40, 1, sample_ticks);
-//    }
 
 
     void gfxPrintVoltage(int cv) {
